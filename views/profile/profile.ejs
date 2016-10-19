@@ -1,0 +1,38 @@
+<% include ../layout/header %>
+	<table class="profiletable">
+		<tr>
+			<td><strong>Username:</strong></td>
+			<td><%= user.username %></td>
+		</tr>
+		<tr>
+			<td><strong>Email:</strong></td>
+			<td><%= user.email %></td>
+
+		</tr>
+		<tr>
+			<td><strong>Firstname:</strong></td>
+			<td><%= user.firstname %></td>
+
+		</tr>
+		<tr>
+			<td><strong>lastname:</strong></td>
+			<td><%= user.lastname %></td>
+		</tr>
+		<tr>
+			<td><strong>Birthday:</strong></td>
+			<td><%= user.birthday.toDateString() %></td>
+			<td>
+			</td>
+
+		</tr>
+		<tr>
+			<td><strong>Gender:</strong></td>
+			<td><%= user.gender %></td>
+
+		</tr>
+		<tr>
+			<td><strong>created at:</strong></td>
+			<td><%= user.created_at.toDateString()%></td>
+		</tr>
+	</table>
+	<% include ../layout/footer %>

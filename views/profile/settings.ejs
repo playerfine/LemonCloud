@@ -1,0 +1,59 @@
+<% include ../layout/header %>
+<h1>Edit your profile</h1>
+
+<div class="success">
+	<%= success_message %>
+</div>
+
+<form action="/settings?_method=PUT" method="post">
+	<table class="profiletable">
+		<tr>
+			<td><strong>Username:</strong></td>
+			<td><input type="text" value="<%= currentUser.username %>" readonly></td>
+		</tr>
+		<tr>
+			<td><strong>Email:</strong></td>
+			<td><input type="email" value="<%= currentUser.email %>" name="email" readonly></td>
+			<td><i class="fa fa-pencil edit" aria-hidden="true"></i></td>
+		</tr>
+		<tr>
+			<td><strong>Firstname:</strong></td>
+			<td><input type="text" name="firstname" value="<%= currentUser.firstname %>" readonly></td>
+			<td><i class="fa fa-pencil edit" aria-hidden="true"></i></td>
+		</tr>
+		<tr>
+			<td><strong>Lastname:</strong></td>
+			<td><input type="text" name="lastname" value="<%= currentUser.lastname %>" readonly></td>
+			<td><i class="fa fa-pencil edit" aria-hidden="true"></i></td>
+		</tr>
+		<tr>
+			<td><strong>Birthday:</strong></td>
+			<td>
+			<select>
+			<option>May</option>	
+			</select>
+			<select>
+				<% for(var i = 1; i < 32; i++) { %>
+					<option><%= i %></option>
+				<% } %>
+			</select>
+			<select>
+				<% for(var i = 2016; i > 1904; i--) { %>
+					<option><%= i %></option>
+				<% } %>
+			</select>
+			</td>
+			<td><i class="fa fa-pencil edit" aria-hidden="true"></i></td>
+		</tr>
+		<tr>
+			<td><strong>Gender:</strong></td>
+			<td><input type="text" value="<%= currentUser.gender %>" readonly></td>
+		</tr>
+		<tr>
+			<td><strong>created at:</strong></td>
+			<td><input type="text" value="<%= currentUser.created_at.toDateString() %>" readonly></td>
+		</tr>
+	</table>
+	<button>Save Changes</button>
+</form>
+<% include ../layout/footer %>

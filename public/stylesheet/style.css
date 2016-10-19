@@ -1,0 +1,134 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+	background: white;
+	border-bottom: 1px solid #b3b3b3;
+	height: 8%;
+	background: pink;
+}
+
+
+h1 {
+	font-weight: normal;
+	text-align: center;
+}
+
+footer{
+	background: white;
+	border-top: 1px solid #b3b3b3;
+	height: 8%;
+	background: pink;
+
+}
+
+
+
+
+#container{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.leftMenu{
+	width: 15%;
+	background:#6799A3;
+	height: 100%;
+	float: left;
+}
+
+.content{
+	float: left;
+	width: 70%;
+	height: 100%;
+	background: #f8f9fb;
+	box-sizing: border-box;
+	border-left: 1px solid #b3b3b3;
+	border-right: 1px solid #b3b3b3;  
+}
+
+.contentBox{
+	padding: 10px;
+	font-size: 15px;
+	width: 90%;
+	margin: 2% auto;
+	background: white;
+	height: auto;
+	border:1px solid #c3c3c3;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13);
+}
+
+.rightMenu{
+	width: 15%;
+	background: white;
+	height: 100%;
+	float: right;
+}
+
+
+/*
+============================================= PROFILE =============================================
+*/
+.fa{
+	float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profilecolumn{
+	width: 100%;
+	height: auto;
+}
+
+.profilecolumn h1{
+	font-weight: normal;
+	padding-top: 10px;
+	color: white;
+	text-align: center;
+}
+
+.profilepicture{
+	width: 70%;
+	display: block;
+	margin: auto;
+	height: 140.23px;
+	border-radius: 50%;
+}
+
+.profiletable td {
+	width: 10%;
+	height: 34px;
+}
+
+.profiletable tr{
+		box-sizing: border-box;
+	border-bottom: 1px solid rgba(97, 96, 96, 0.05);
+}
+
+.profiletable input{
+	border: none;
+	width: 100%;
+}
+
+.profilebanner{
+	margin: 1%;
+	background:white;
+	width:66%;
+	display:inline-block;
+	padding: 10px;
+	border:1px solid #c3c3c3;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13);
+}
+.profilebanner img{
+	width: 100%;
+	height: 250px;
+    min-width:100%;
+    object-fit: cover;
+    min-height:100%
+}
