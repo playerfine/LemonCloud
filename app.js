@@ -22,7 +22,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({
 	cookieName: "session", //define the name
-	secret: "389239a5329982rs$@%frosaofios@$er3w9r9da$%%sbuadi3rin#@$#@epor2o52o3242o", //random String
+	secret: "3892395329982rs$@%frosaofios@$er3w9r9da$%%sbuadi3rin#@$#@epor2o52o3242o", //random String
 	duration: 30 * 60 * 1000, //duration in milliseconds
 	activeDuration: 5 * 60 * 1000, //prevent user to logout when he is active on the site
 	httpOnly: true,
