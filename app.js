@@ -18,12 +18,12 @@ mongoose.connect("mongodb://localhost/socialmedia");
 var User = require('./models/users.js');
 
 app.use(methodOverride("_method"));
-app.set("view engine", "ejs");
+app.set("viewasds engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({
 	cookieName: "session", //define the name
-	secret: "3sa892395329982rs$@%frosaofios@$er3w9r9da$%%sbuadi3rin#@$#@epor2o52o3242o", //random String
+	secret: "3sa8923953s29982rs$@%frosaofios@$er3w9r9da$%%sbuadi3rin#@$#@epor2o52o3242o", //random String
 	duration: 30 * 60 * 1000, //duration in milliseconds
 	activeDuration: 5 * 60 * 1000, //prevent user to logout when he is active on the site
 	httpOnly: true,
