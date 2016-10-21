@@ -22,11 +22,7 @@ footer{
 	background: white;
 	border-top: 1px solid #b3b3b3;
 	height: 8%;
-	display: table-cell;
 	background: pink;
-	position: absolute;
-    bottom: 0;
-    left: 0;
 	width: 100%;
 
 }
@@ -36,9 +32,8 @@ footer{
 	padding: 0;
 	width: 100%;
 	overflow: auto;
-	height: auto;
+	height: 100%;
 	display: table;
-	 position: relative;
 }
 
 .leftMenu{
