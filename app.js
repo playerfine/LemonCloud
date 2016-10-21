@@ -17,7 +17,7 @@ mongoose.connect("mongodb://localhost/socialmedia");
 var User = require('./models/users.js');
 
 app.use(methodOverride("_method"));
-app.set("viewasds engine", "ejs");
+app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({
