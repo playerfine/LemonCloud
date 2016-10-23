@@ -14,7 +14,11 @@
 	<div id="container">
 		<div class="leftMenu"></div>
 		<div class="content">
-			<div class="contentBox">
-			ad</div>
-			<div class="contentBox"/></div>													
+			<% if(showProfileBanner){ %>
+				<div class="profileBanner"/>
+					<img class="profileBannerImage" src="https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=3f21dab20634b21d603b8f89640a7476"/>
+					<img class="profilePicture" src="https://scontent.fcur1-1.fna.fbcdn.net/v/t1.0-9/14713619_1274274235937750_402609926303127385_n.jpg?oh=8d016f74655228c132b6a5ac3d85ba99&oe=58A05D0B" />
+					<span class="profileBannerText"><%= user.firstname %> <%= user.lastname %></span>
+				</div>
+			<% } %>									
 			<div class="contentBox">
