@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var session = require('client-sessions');
+var busboy = require('connect-busboy');
 
 //ROUTES
 var profileRoutes 	= 	require('./routes/profile.js');
@@ -19,6 +20,7 @@ var User = require('./models/users.js');
 app.use(methodOverride("_method"));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use(busboy());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({
 	cookieName: "session", //define the name

@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Huis te Koop</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="menubar">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="menubar2">
+            "Logic will get you from A to B. Imagination will take you everywhere." ~Albert Einstein.
+        </div>
+    </div>
+    <div class="container">
+        <div class="textbox">
+            <p>
+                <h1>Dit is een Test</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis mi enim, ac malesuada risus ultrices non. Vestibulum at odio varius, aliquam est sed, lacinia nunc. In nec erat in risus tempus venenatis. Aenean lobortis facilisis lectus a vulputate. Curabitur dui turpis, feugiat id nisl eu, tincidunt efficitur leo. Nam eu nisi eget ante ultricies finibus. Phasellus varius enim ut dolor consequat efficitur. Fusce euismod sodales mi ut lobortis. Vestibulum tempor ut elit quis consequat.</p>
+                <p>
+                    <div class="fotos">
+                        <div class="test"><img src="/images/test.png" alt="test">
+                            <p>
+                               kip non. Vestibulum at odio varius<br /><button type="button">Read More!</button>
+                            </p>
+                        </div>
+
+                        <div class="test"><img src="/images/test.png" alt="test">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis mi enim, ac malesuada risus ultrices non. Vestibulum at odio varius<br /><button type="button">Read More!</button>
+                            </p>
+                        </div>
+
+                        <div class="test"><img src="/images/test.png" alt="test">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis mi enim, ac malesuada risus ultrices non. Vestibulum at odio varius<br /><button type="button">Read More!</button>
+                            </p>
+                        </div>
+                    </div>
+        </div>
+
+
+    </div>
+    <div class="footer">
+
+    </div>
+
+    <div class="bottomfooter">
+
+    </div>
+</body>
+
+</html>
