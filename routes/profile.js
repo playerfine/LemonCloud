@@ -6,7 +6,7 @@ var middleware = require('../middleware/index.js');
 
 
 router.put("/settings", middleware.requireLogin, function(req, res){
-	var newData = {email: req.body.email, firstname: req.body.firstname, lastname: req.body.lastname, birthday: req.body.birthday};
+	var newData = {email: req.body.email, firstname: req.body.firstname, lastname: req.body.lastname};
 
 	User.findByIdAndUpdate(req.session.user._id, newData, function(err, data){
 		if(err){
@@ -23,7 +23,7 @@ router.get("/settings", middleware.requireLogin, function(req, res){
 
 
 router.get("/profile/:username", function(req, res){;
-		User.findOne({username: req.params.username}, function(err, FoundUser){
+		User.findOne({username: req.params.username}, function(err, foundUser){
 		if(err){
 				console.log("test");
 		}else{
@@ -31,7 +31,8 @@ router.get("/profile/:username", function(req, res){;
 			// console.log(FoundUser.email);
 			res.locals.showProfileBanner = true;
 
-			res.render("profile/profile", {user: FoundUser});
+
+			res.render("profile/profile", {user: foundUser});
 		}
 	});
 });

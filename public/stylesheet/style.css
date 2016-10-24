@@ -23,34 +23,35 @@ footer{
 	border-top: 1px solid #b3b3b3;
 	height: 8%;
 	background: pink;
+	width: 100%;
 
 }
-
-
-
 
 #container{
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	overflow: auto;
 	height: 100%;
+	display: table;
 }
 
 .leftMenu{
 	width: 15%;
 	background:#6799A3;
-	height: 100%;
-	float: left;
+	height: 10px;
+	display: table-cell;
 }
 
 .content{
-	float: left;
+	display: table-cell;
 	width: 70%;
 	height: 100%;
 	background: #f8f9fb;
 	box-sizing: border-box;
 	border-left: 1px solid #b3b3b3;
-	border-right: 1px solid #b3b3b3;  
+	border-right: 1px solid #b3b3b3; 
+	height: auto;
 }
 
 .contentBox{
@@ -67,8 +68,8 @@ footer{
 .rightMenu{
 	width: 15%;
 	background: white;
-	height: 100%;
-	float: right;
+	height: 10px;
+	display: table-cell;
 }
 
 
@@ -93,12 +94,18 @@ footer{
 	text-align: center;
 }
 
-.profilepicture{
-	width: 70%;
+.profilePicture{
 	display: block;
 	margin: auto;
-	height: 140.23px;
-	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	bottom: 15%;
+    left: 5%;
+	border: 1px solid rgba(0, 0, 0, .32);
+	padding: 4px;
+	background: white;
+	border-radius: 10%;
 }
 
 .profiletable td {
@@ -116,19 +123,35 @@ footer{
 	width: 100%;
 }
 
-.profilebanner{
-	margin: 1%;
-	background:white;
-	width:66%;
-	display:inline-block;
-	padding: 10px;
+.profileBanner{
+	font-size: 15px;
+	width: 92.5%;
+	margin: 2% auto;
+	background: white;
+	height: auto;
 	border:1px solid #c3c3c3;
 	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13);
+	position: relative; left: 0; top: 0;
 }
-.profilebanner img{
+.profileBannerImage{
 	width: 100%;
 	height: 250px;
     min-width:100%;
     object-fit: cover;
-    min-height:100%
+    min-height:100%;
+	position: relative; top: 0; left: 0;
+}
+
+.profileBannerText{
+	position: absolute;
+	font-size: 32px;
+	bottom: 35%;
+	font-weight: bold;
+    left: 25%;
+	color: white;
+	  text-shadow:
+   -1px -1px 0 	rgba(0, 0, 0, .15),  
+    1px -1px 0 	rgba(0, 0, 0, .15),
+    -1px 1px 0 	rgba(0, 0, 0, .15),
+     1px 1px 0 	rgba(0, 0, 0, .15);
 }
