@@ -4,15 +4,25 @@
 		<%= error %>
 	</div>
 	<form action="/register" method="POST">
+		<div>
+			<input class="b k" type="text" name="firstname" placeholder="Firstname">
+			<input class="b c" type="text" name="lastname" placeholder="Lastname"/>
+		</div>
+		<div>
+		<select class="b g"></select>
+		<select class="b g"></select>
+		<select class="b g"></select>
+		</div>
+		<div><input class="b" type="email" name="email" placeholder="Email"></div>
 
-		<div><input type="email" name="email" placeholder="Email"></div>
+		<div><input class="b" type="text" name="username" placeholder="Username"></div>
 
-		<div><input type="text" name="username" placeholder="Username"></div>
-
-		<div><input type="password" name="password" placeholder="Password"></div>
+		<div><input class="b" type="password" name="password" placeholder="Password"></div>
+		<div>
+			Male: <input type="radio" value="male" name="gender" checked>
+			Female: <input type="radio" value="female" name="gender">
+		</div>
 		<div><small><a class="alreadyLogin" href="javascript:void(0)">Already have an account? Click here to login!</a></small></div>
 		<button>Sign Up!</button>
 	</form>
 </div>
-
-
