@@ -9,6 +9,7 @@ var session = require('client-sessions');
 var busboy = require('connect-busboy');
 
 //ROUTES
+var cmsRoutes 			= 	require('./routes/cms.js');
 var profileRoutes 	= 	require('./routes/profile.js');
 var indexRoutes 	=  	require('./routes/index.js');
 
@@ -58,7 +59,7 @@ app.use(function(req, res, next){
 
 
 
-
+app.use(('/', cmsRoutes));
 app.use("/", profileRoutes);
 
 app.use("/", indexRoutes);
