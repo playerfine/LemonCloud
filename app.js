@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 var session = require('client-sessions');
 
 //ROUTES
+var cmsRoutes 			= 	require('./routes/cms.js');
 var profileRoutes 	= 	require('./routes/profile.js');
 var indexRoutes 	=  	require('./routes/index.js');
 
@@ -18,7 +19,7 @@ mongoose.connect("mongodb://localhost/socialmedia");
 var User = require('./models/users.js');
 
 app.use(methodOverride("_method"));
-app.set("viewasds engine", "ejs");
+app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({
@@ -56,7 +57,7 @@ app.use(function(req, res, next){
 
 
 
-
+app.use(('/', cmsRoutes));
 app.use("/", profileRoutes);
 
 app.use("/", indexRoutes);
